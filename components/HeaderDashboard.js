@@ -22,11 +22,11 @@ const HeaderDashboard = () => {
         {/* MIDDLE */}
         <div className="flex items-center md:border-2 rounded-full md:shadow-md">
             <input className="flex-grow overflow-hidden h-8 pl-5 bg-transparent outline-none text-md text-gray-600 placeholder-gray-400" type="text" placeholder="Search"></input>
-            <SearchIcon className="hidden lg:inline-flex h-8 bg-slate-400 text-white rounded-full p-2 cursor-pointer md:mx-2"/>
+            <SearchIcon className="hidden md:inline-flex lg:inline-flex h-8 bg-slate-400 text-white rounded-full p-2 cursor-pointer md:mx-2"/>
         </div>
 
         {/* RIGHT */}
-        <div className="flex max-container items-center justify-end space-x-4 text-gray-600 md:border-2 rounded-full p-5">
+        <div className="flex max-container items-center justify-end space-x-4 text-gray-600 rounded-full p-5">
             <p className="hidden md:inline-flex">User Profile</p>
         <SignedIn>
             <UserButton afterSignOutUrl="/" />

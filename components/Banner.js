@@ -12,8 +12,8 @@ const Banner = () => {
             objectPosition="center"
             className="opacity-75"
         />
-        <div className="absolute top-1/2 w-full text-center">
-          <p className="text-lg text-blue-950 bg-white p-2 font-bold sm:text-xl rounded-full">Explore Kabankalan Today!</p>
+        <div className="absolute top-1/2 w-full bg-white bg-opacity-50 text-center">
+          <p className="text-lg text-blue-950 p-2 font-bold sm:text-xl rounded-full">Explore Kabankalan Today!</p>
         </div>
     </div>
   )
