@@ -15,7 +15,7 @@ async function getData() {
 }
 
 const page = ({res}) => {
-  const kabData = getData()
+  const kabData = fetch (getData())
   return (
     <>
         <HeaderDashboard />
@@ -24,6 +24,7 @@ const page = ({res}) => {
           <section className="pt-5">
             <h1 className="text-3xl font-semibold pb-10 px-8 sm:p-10">Nearby Places</h1>
 
+            {/* Data from JSON file */}
             {kabData.map((item) => (
               <h1>{item.category}</h1>
             ))}
