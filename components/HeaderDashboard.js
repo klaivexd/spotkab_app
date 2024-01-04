@@ -25,8 +25,6 @@ const HeaderDashboard = () => {
         key: 'selection'
     };
 
-    
-    
   return (
     <nav className="sticky top-0 z-50 grid grid-cols-3 padding-container bg-white shadow-md p-5 md:px-10">
         {/* LEFT */}
