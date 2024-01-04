@@ -1,54 +1,36 @@
-import React from 'react';
-import HeaderDashboard from '../../components/HeaderDashboard';
-import Banner from '../../components/Banner';
-import CategoryCards from '../../components/CategoryCards';
+import React from 'react'
 
-export const getCategories = async () => {
-  try {
-    const data = await fetch('https://www.jsonkeeper.com/b/MXTU', {
-      cache: 'force-cache',
-    });
-    const res = await data.json();
-    return res || [];
-  } catch (error) {
-    console.error('Error fetching categories:', error);
-    return [];
+import { useQuery, gql } from '@apollo/client';
+
+const GET_BUSINESSES = gql`
+  query GetBusinesses($category: String!) {
+    businesses(category: $category) {
+      id
+      name
+      category
+      latitude
+      longitude
+      // other fields...
+    }
   }
+`;
+
+const page = () => {
+  const { loading, error, data } = useQuery(GET_BUSINESSES, {
+    variables: { category: 'Restaurants' }, // initial category
+  });
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
+
+  const businesses = data.businesses;
+
+  return (
+    <div>
+      {/* Display your Mapbox map and businesses list */}
+      {/* Use businesses data to render markers on the map */}
+    </div>
+  );
 };
 
-const page = async () => {
-  try {
-    const fetched = await getCategories();
-    return (
-      <>
-        <HeaderDashboard />
-        <Banner />
-        <main className="max-container mx-auto">
-          <section className="pt-5">
-            <h1 className="text-3xl font-semibold pb-10 px-8 sm:p-10">Choose a category</h1>
-
-            {/* Data from JSON file */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-              {Array.isArray(fetched) && fetched.length > 0 ? (
-                fetched?.map(({img, category}) => (
-                  <CategoryCards
-                    key={img}
-                    img={img}
-                    category={category}
-                  />
-                ))
-              ) : (
-                <p>No categories found.</p>
-              )}
-            </div>
-          </section>
-        </main>
-      </>
-    );
-  } catch (error) {
-    console.error('Error rendering page:', error);
-    return <p>Error loading page.</p>;
-  }
-};
-
-export default page;
+export default page

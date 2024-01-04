@@ -10,10 +10,11 @@ const Map = () => {
         latitude: 40,
         zoom: 15,
     });
+
     return <Map
         mapboxAccessToken={process.env.mapbox_key}
         mapLib={import('mapbox-gl')}
-
+        {...viewport}
     />;
 }
 
