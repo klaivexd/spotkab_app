@@ -1,7 +1,36 @@
-[
-    {
-        "title": "My Title",
-        "content": "Lorem Ipsum",
-        "description": "Testing description"
-    }
-]
+{
+    "stores": [
+        {
+            "id": "1",
+            "name": "Store1",
+            "rating": "5"
+        },
+        {
+            "id": "2",
+            "name": "Tiangge",
+            "rating": "5"
+        },
+        {
+            "id": "3",
+            "name": "Tindahan",
+            "rating": "5"
+        }
+    ],
+    "restaurants": [
+        {
+            "id": "1",
+            "name": "Jollibee",
+            "rating": "5"
+        },
+        {
+            "id": "2",
+            "name": "Mcdo",
+            "rating": "5"
+        },
+        {
+            "id": "3",
+            "name": "Snackee",
+            "rating": "5"
+        }
+    ]
+}
