@@ -8,11 +8,13 @@ import { SearchIcon } from '@heroicons/react/solid'
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRange } from 'react-date-range';
+import { useRouter } from 'next/navigation';
 
 const HeaderDashboard = () => {
     const [searchInput, setSearchInput] = useState("");
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
+    const router = useRouter();
 
     const handleSelect = (ranges) => {
         setStartDate(ranges.selection.startDate);
@@ -28,7 +30,7 @@ const HeaderDashboard = () => {
   return (
     <nav className="sticky top-0 z-50 grid grid-cols-3 padding-container bg-white shadow-md p-5 md:px-10">
         {/* LEFT */}
-        <div>
+        <div onClick={() => router.push("/dashboard")}>
             <Image
                 src="logo-icon.svg"
                 alt="Logo"
