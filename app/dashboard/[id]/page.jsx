@@ -1,7 +1,7 @@
 import HeaderDashboard from "@/components/HeaderDashboard"
 
 async function getList(id) {
-    const res = await fetch('http://localhost:4000/Stores' + id, {
+    const res = await fetch('http://localhost:4000/stores' + id, {
         next: {
             revalidate: 0
         }
@@ -10,7 +10,7 @@ async function getList(id) {
 }
 
 export default async function CategoryDetails({params}) {
-    const stores = await getList(params.id)
+    const stores = await getList(params.category_id)
   return (
     <>
         <HeaderDashboard />

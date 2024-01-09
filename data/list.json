@@ -1,5 +1,5 @@
 {
-    "Categories": [
+    "categories": [
     {
         "id": "1",
         "img": "https://i.ibb.co/CMLqsHQ/stores.png",
@@ -62,7 +62,7 @@
     }
     ],
 
-    "Stores": [
+    "stores": [
         {
           "id": 1,
           "name": "Tindahan ni Aling Nena",

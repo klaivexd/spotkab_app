@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 async function getLists() {
-    const res = await fetch('http://localhost:4000/Categories', {
+    const res = await fetch('http://localhost:4000/categories', {
         next: {
             revalidate: 0
         }
