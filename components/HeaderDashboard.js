@@ -9,12 +9,18 @@ import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRange } from 'react-date-range';
 import { useRouter } from 'next/navigation';
+import { useUser } from "@clerk/nextjs";
 
 const HeaderDashboard = () => {
+    const { isLoaded, isSignedIn, user } = useUser();
     const [searchInput, setSearchInput] = useState("");
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
     const router = useRouter();
+
+    if (!isLoaded || !isSignedIn) {
+        return null;
+      }
 
     const handleSelect = (ranges) => {
         setStartDate(ranges.selection.startDate);
@@ -54,7 +60,7 @@ const HeaderDashboard = () => {
 
         {/* RIGHT */}
         <div className="flex max-container items-center justify-end space-x-4 text-gray-600 rounded-full p-5">
-            <p className="hidden md:inline-flex">User Profile</p>
+            <p className="hidden md:inline-flex font-semibold">Hello, {user.firstName}</p>
         <SignedIn>
             <UserButton afterSignOutUrl="/" />
         </SignedIn>
