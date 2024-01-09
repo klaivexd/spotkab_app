@@ -1,5 +1,5 @@
 {
-    "Lists": [
+    "Categories": [
     {
         "id": "1",
         "img": "https://i.ibb.co/CMLqsHQ/stores.png",
@@ -59,11 +59,21 @@
         "id": "12",
         "img": "https://i.ibb.co/LQJY52X/malls.png",
         "category": "Malls"
-    },
-    {
-        "id": "13",
-        "img": "https://i.ibb.co/LQJY52X/malls.png",
-        "category": "New"
     }
+    ],
+
+    "Stores": [
+        {
+          "id": 1,
+          "name": "Tindahan ni Aling Nena",
+          "rating": "5",
+          "category_id": 1
+        },
+        {
+          "id": 2,
+          "name": "Jollibee",
+          "rating": "5",
+          "category_id": 2
+        }
     ]
 }
