@@ -3,62 +3,62 @@
     {
         "id": "1",
         "img": "https://i.ibb.co/CMLqsHQ/stores.png",
-        "category": "Stores"
+        "category": "stores"
     },
     {
         "id": "2",
         "img": "https://i.ibb.co/BthCyq9/restaurants.png",
-        "category": "Restaurants"
+        "category": "restaurants"
     },
     {
         "id": "3",
         "img": "https://i.ibb.co/znJ1BDv/groceries.png",
-        "category": "Groceries"
+        "category": "groceries"
     },
     {
         "id": "4",
         "img": "https://i.ibb.co/GJdrzsb/hotels.png",
-        "category": "Hotels"
+        "category": "hotels"
     },
     {
         "id": "5",
         "img": "https://i.ibb.co/6bfw5LS/pharmacies.png",
-        "category": "Pharmacies"
+        "category": "pharmacies"
     },
     {
         "id": "6",
         "img": "https://i.ibb.co/M9KRC7d/hospitals.png",
-        "category": "Hospitals"
+        "category": "hospitals"
     },
     {
         "id": "7",
         "img": "https://i.ibb.co/ygCG2Hn/banks.png",
-        "category": "Banks"
+        "category": "banks"
     },
     {
         "id": "8",
         "img": "https://i.ibb.co/q7DXzt0/churches.png",
-        "category": "Churches"
+        "category": "churches"
     },
     {
         "id": "9",
         "img": "https://i.ibb.co/GVX9Cyx/terminals.png",
-        "category": "Terminals"
+        "category": "terminals"
     },
     {
         "id": "10",
         "img": "https://i.ibb.co/MpxTX18/schools.png",
-        "category": "Schools"
+        "category": "schools"
     },
     {
         "id": "11",
         "img": "https://i.ibb.co/xfjPQwt/gas-stations.png",
-        "category": "Gas Stations"
+        "category": "gas stations"
     },
     {
         "id": "12",
         "img": "https://i.ibb.co/LQJY52X/malls.png",
-        "category": "Malls"
+        "category": "malls"
     }
     ],
 

@@ -1,7 +1,7 @@
 import HeaderDashboard from "@/components/HeaderDashboard"
 
 async function getList(id) {
-    const res = await fetch('http://localhost:4000/stores' + id, {
+    const res = await fetch('http://localhost:4000/' + id.toLowerCase(), {
         next: {
             revalidate: 0
         }
@@ -10,15 +10,24 @@ async function getList(id) {
 }
 
 export default async function CategoryDetails({params}) {
-    const stores = await getList(params.category_id)
+    const stores = await getList(params.id);
   return (
     <>
         <HeaderDashboard />
         <section>
             <div className="max-container flex text-center">
-                <h3>Stores</h3>
-                <p>{stores.name}</p>
-                <p>{stores.rating}</p>
+                <h3>{params.id}</h3>
+                {
+                   stores.map((store) => {
+                    return (
+                        <>
+                            <div>
+                                {store.name}
+                            </div>
+                        </>
+                    )
+                   }) 
+                }
             </div>
         </section>
     </>
