@@ -1,4 +1,5 @@
 import HeaderDashboard from "@/components/HeaderDashboard"
+import Image from "next/image";
 
 async function getList(id) {
     const res = await fetch('http://localhost:4000/' + id.toLowerCase(), {
@@ -14,9 +15,8 @@ export default async function CategoryDetails({params}) {
   return (
     <>
         <HeaderDashboard />
-        <section>
-            <div className="max-container flex text-center">
-                <h3>{params.id}</h3>
+        <section className="grid grid-cols-1 sm:grid-cols-2 padding-container bg-red-500 mt-5">
+            <div className="p-5 gap-y-20">
                 {
                    stores.map((store) => {
                     return (
@@ -26,9 +26,10 @@ export default async function CategoryDetails({params}) {
                             </div>
                         </>
                     )
-                   }) 
+                   })
                 }
             </div>
+            <div className="bg-green-500">Map Here</div>
         </section>
     </>
   )

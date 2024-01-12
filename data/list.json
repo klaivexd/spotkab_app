@@ -3,62 +3,62 @@
     {
         "id": "1",
         "img": "https://i.ibb.co/CMLqsHQ/stores.png",
-        "category": "stores"
+        "category": "Stores"
     },
     {
         "id": "2",
         "img": "https://i.ibb.co/BthCyq9/restaurants.png",
-        "category": "restaurants"
+        "category": "Restaurants"
     },
     {
         "id": "3",
         "img": "https://i.ibb.co/znJ1BDv/groceries.png",
-        "category": "groceries"
+        "category": "Groceries"
     },
     {
         "id": "4",
         "img": "https://i.ibb.co/GJdrzsb/hotels.png",
-        "category": "hotels"
+        "category": "Hotels"
     },
     {
         "id": "5",
         "img": "https://i.ibb.co/6bfw5LS/pharmacies.png",
-        "category": "pharmacies"
+        "category": "Pharmacies"
     },
     {
         "id": "6",
         "img": "https://i.ibb.co/M9KRC7d/hospitals.png",
-        "category": "hospitals"
+        "category": "Hospitals"
     },
     {
         "id": "7",
         "img": "https://i.ibb.co/ygCG2Hn/banks.png",
-        "category": "banks"
+        "category": "Banks"
     },
     {
         "id": "8",
         "img": "https://i.ibb.co/q7DXzt0/churches.png",
-        "category": "churches"
+        "category": "Churches"
     },
     {
         "id": "9",
         "img": "https://i.ibb.co/GVX9Cyx/terminals.png",
-        "category": "terminals"
+        "category": "Terminals"
     },
     {
         "id": "10",
         "img": "https://i.ibb.co/MpxTX18/schools.png",
-        "category": "schools"
+        "category": "Schools"
     },
     {
         "id": "11",
         "img": "https://i.ibb.co/xfjPQwt/gas-stations.png",
-        "category": "gas stations"
+        "category": "Gas Stations"
     },
     {
         "id": "12",
         "img": "https://i.ibb.co/LQJY52X/malls.png",
-        "category": "malls"
+        "category": "Malls"
     }
     ],
 
@@ -72,6 +72,172 @@
         {
           "id": 2,
           "name": "Jollibee",
+          "rating": "5",
+          "category_id": 2
+        }
+    ],
+
+    "restaurants": [
+        {
+          "id": 1,
+          "name": "Restaurant 1",
+          "rating": "5",
+          "category_id": 1
+        },
+        {
+          "id": 2,
+          "name": "Restaurant 2",
+          "rating": "5",
+          "category_id": 2
+        }
+    ],
+
+    "groceries": [
+        {
+          "id": 1,
+          "name": "Restaurant 1",
+          "rating": "5",
+          "category_id": 1
+        },
+        {
+          "id": 2,
+          "name": "Restaurant 2",
+          "rating": "5",
+          "category_id": 2
+        }
+    ],
+
+    "hotels": [
+        {
+          "id": 1,
+          "name": "Restaurant 1",
+          "rating": "5",
+          "category_id": 1
+        },
+        {
+          "id": 2,
+          "name": "Restaurant 2",
+          "rating": "5",
+          "category_id": 2
+        }
+    ],
+
+    "pharmacies": [
+        {
+          "id": 1,
+          "name": "Restaurant 1",
+          "rating": "5",
+          "category_id": 1
+        },
+        {
+          "id": 2,
+          "name": "Restaurant 2",
+          "rating": "5",
+          "category_id": 2
+        }
+    ],
+    
+    "hospitals": [
+        {
+          "id": 1,
+          "name": "Restaurant 1",
+          "rating": "5",
+          "category_id": 1
+        },
+        {
+          "id": 2,
+          "name": "Restaurant 2",
+          "rating": "5",
+          "category_id": 2
+        }
+    ],
+
+    "banks": [
+        {
+          "id": 1,
+          "name": "Restaurant 1",
+          "rating": "5",
+          "category_id": 1
+        },
+        {
+          "id": 2,
+          "name": "Restaurant 2",
+          "rating": "5",
+          "category_id": 2
+        }
+    ],
+
+    "churches": [
+        {
+          "id": 1,
+          "name": "Restaurant 1",
+          "rating": "5",
+          "category_id": 1
+        },
+        {
+          "id": 2,
+          "name": "Restaurant 2",
+          "rating": "5",
+          "category_id": 2
+        }
+    ],
+
+    "terminals": [
+        {
+          "id": 1,
+          "name": "Restaurant 1",
+          "rating": "5",
+          "category_id": 1
+        },
+        {
+          "id": 2,
+          "name": "Restaurant 2",
+          "rating": "5",
+          "category_id": 2
+        }
+    ],
+
+    "schools": [
+        {
+          "id": 1,
+          "name": "Restaurant 1",
+          "rating": "5",
+          "category_id": 1
+        },
+        {
+          "id": 2,
+          "name": "Restaurant 2",
+          "rating": "5",
+          "category_id": 2
+        }
+    ],
+
+    "Gas%20Stations": [
+        {
+          "id": 1,
+          "name": "Restaurant 1",
+          "rating": "5",
+          "category_id": 1
+        },
+        {
+          "id": 2,
+          "name": "Restaurant 2",
+          "rating": "5",
+          "category_id": 2
+        }
+    ],
+
+    "malls": [
+        {
+          "id": 1,
+          "img": "https://i.ibb.co/6bfw5LS/pharmacies.png",
+          "name": "City Mall",
+          "rating": "5",
+          "category_id": 1
+        },
+        {
+          "id": 2,
+          "name": "Restaurant 2",
           "rating": "5",
           "category_id": 2
         }
